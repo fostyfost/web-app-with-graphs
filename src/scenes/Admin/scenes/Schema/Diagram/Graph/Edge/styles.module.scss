@@ -1,0 +1,20 @@
+.root {
+  cursor: pointer;
+  fill: transparent;
+  stroke-width: 2px;
+  stroke: #50cbe3;
+}
+
+.selected {
+  stroke-width: 4px;
+  stroke: #2d8b9e;
+}
+
+.hovered, .highlighted {
+  stroke-width: 2px;
+  stroke: #2d8b9e;
+}
+
+.faded {
+  opacity: 0.5;
+}

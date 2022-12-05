@@ -1,0 +1,14 @@
+.container {
+  margin: 0 -20px;
+  width: calc(100% + 40px);
+}
+
+.list {
+  padding: 8px;
+  transition: background-color 0.2s ease;
+  background-color: 'skyblue';
+}
+
+.list:hover {
+  background-color: 'white';
+}

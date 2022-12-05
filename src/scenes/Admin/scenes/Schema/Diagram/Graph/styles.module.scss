@@ -1,0 +1,41 @@
+.root {
+  position: relative;
+  display: flex;
+  font-size: 14px;
+  box-sizing: content-box;
+  box-sizing: border-box;
+  text-overflow: clip;
+  border: none;
+  transform-origin: 0px 0px;
+}
+
+.container {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.nodes {
+  position: absolute;
+  z-index: 1000;
+}
+
+.edgeLabels {
+  position: absolute;
+  z-index: 1000;
+}
+
+.svg {
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+  background-origin: padding-box;
+  background-clip: border-box;
+  background-position: -1px -1px, -1px -1px;
+  overflow:visible;
+}
+
+.drawingEdge .node:hover {
+  background: rgb(185, 183, 183);
+}

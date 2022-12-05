@@ -1,0 +1,42 @@
+.block {
+  text-align: left;
+  display: flex;
+  width: 100%;
+  position: relative;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.handle {
+  flex: 0 0 16px;
+  visibility: hidden;
+  position: absolute;
+  top: 14px;
+  left: 10px;
+}
+
+.handleIcon {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 2rem;
+  // border-left: 2px solid #C9CED6;
+}
+
+.block.dragging,
+.block:hover {
+  background-color: #fafbfa;
+  // border-top: 1px solid #e4e7eb;
+  // border-bottom: 1px solid #e4e7eb;
+  // box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.block.dragging .handle,
+.block:hover .handle {
+  visibility: visible;
+}
